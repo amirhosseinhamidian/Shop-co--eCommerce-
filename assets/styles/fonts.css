@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Satushi-Bold';
+    src: url('../fonts/Satoshi-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'integralcf-bold';
+    src: url('../fonts/integralcf-bold.otf') format('opentype');
+}

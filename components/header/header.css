@@ -1,0 +1,11 @@
+.promotion{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--color-withe);
+}
+
+.promotion__close{
+    
+}
