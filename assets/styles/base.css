@@ -5,6 +5,7 @@
     --primary-alpha-10:rgba(0, 0, 0, 0.1);
     --color-white:#fff;
     --color-gray:#F0F0F0;
+    --color-hero-bg:#F2F0F1;
     --color-red:#FF3333;
     --color-red-alpha-10:rgba(255, 51, 51, 0.1);
 
@@ -33,4 +34,21 @@ body{
 
 a{
     text-decoration: none;
+}
+
+/* 
+
+--component--
+
+*/
+
+.btn{
+    background-color: var(--primary);
+    color: var(--color-white);
+    padding: 1.6rem 5.4rem;
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
 }
