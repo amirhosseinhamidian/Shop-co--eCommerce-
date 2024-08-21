@@ -3,7 +3,7 @@ template.innerHTML = `
     <link rel="stylesheet" href="/assets/styles/reset.css">
     <link rel="stylesheet" href="/assets/styles/base.css">
     <link rel="stylesheet" href="/assets/styles/grid.css">
-    <link rel="stylesheet" href="../components/Header/header.css">
+    <link rel="stylesheet" href="../components/header/header.css">
     <div class="promotion">
         <div class="container">
             <div class="promotion__wrapper">

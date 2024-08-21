@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: 'Satushi-Medium';
+    src: url('../fonts/Satoshi-Medium.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'integralcf-bold';
     src: url('../fonts/integralcf-bold.otf') format('opentype');
 }

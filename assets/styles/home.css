@@ -113,6 +113,43 @@
     margin: 2rem 1rem;
 }
 
+/* 
+
+==========================
+    New Arrivals Section
+==========================
+
+*/
+
+.new-arrivals__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4.5rem;
+}
+.new-arrivals__link{
+    margin-top: 3.5rem;
+    background-color: var(--color-white);
+    color: var(--primary);
+    border: 1px solid var(--primary-alpha-10);
+    transition: all 150ms ease-in;
+    -webkit-transition: all 150ms ease-in;
+    -moz-transition: all 150ms ease-in;
+    -ms-transition: all 150ms ease-in;
+    -o-transition: all 150ms ease-in;
+    cursor: pointer;
+}
+.new-arrivals__link:hover{
+    background-color: var(--primary-alpha-10);
+}
+.new-arrivals__divider{
+    margin-top: 4.5rem;
+    border: 0;
+    border-top: 1px solid var(--primary-alpha-10);
+}
+
 @media (max-width:1400px) {
     .hero__title{
         font-size: 4.4rem;
@@ -167,7 +204,9 @@
     }
 }
 @media (max-width:768px) {
-
+    .new-arrivals__link{
+        cursor: none;
+    }
 }
 @media (max-width:576px) {
     .info__count{
@@ -187,6 +226,13 @@
         height: 4.4rem;
         top: 54rem;
         right: 80%;
+    }
+    .new-arrivals__wrapper{
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none; 
     }
 }
 

@@ -1,0 +1,54 @@
+{
+    "categories": {
+      "new_arrivals": {
+        "name": "New Arrivals",
+        "description": "Latest products added to the store"
+      },
+      "top_sell": {
+        "name": "Top Sell",
+        "description": "Best-selling products"
+      },
+      "you_like": {
+        "name": "You Like",
+        "description": "Products recommended based on your preferences"
+      }
+    },
+    "products": {
+      "0": {
+        "name": "T-shirt with Tape Details",
+        "category": "new_arrivals", 
+        "price": 120,
+        "initialPrice":-1,
+        "score":4.5,
+        "description": "",
+        "imageUrl": "gs://shop-co-18eec.appspot.com/new-arrivals/T-shirt1.png"
+      },
+      "1": {
+        "name": "Skinny Fit Jeans",
+        "category": "new_arrivals", 
+        "price": 240,
+        "initialPrice": 260,
+        "score":3.5,
+        "description": "",
+        "imageUrl": "gs://shop-co-18eec.appspot.com/new-arrivals/Jeans1.png"
+      },
+      "2": {
+        "name": "Checkered Shirt",
+        "category": "new_arrivals", 
+        "price": 180,
+        "initialPrice": -1,
+        "score":4.5,
+        "description": "",
+        "imageUrl": "gs://shop-co-18eec.appspot.com/new-arrivals/Shirt1.png"
+      },
+      "3": {
+        "name": "Sleeve Striped T-shirt",
+        "category": "new_arrivals", 
+        "price": 130,
+        "initialPrice": 160,
+        "score":4.5,
+        "description": "",
+        "imageUrl": "gs://shop-co-18eec.appspot.com/new-arrivals/T-shirt2.png"
+      }
+    }
+  }
