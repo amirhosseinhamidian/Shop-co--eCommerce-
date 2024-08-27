@@ -4,8 +4,8 @@
         "name": "New Arrivals",
         "description": "Latest products added to the store"
       },
-      "top_sell": {
-        "name": "Top Sell",
+      "top_selling": {
+        "name": "Top Selling",
         "description": "Best-selling products"
       },
       "you_like": {
@@ -21,7 +21,7 @@
         "initialPrice":-1,
         "score":4.5,
         "description": "",
-        "imageUrl": "gs://shop-co-18eec.appspot.com/new-arrivals/T-shirt1.png"
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/new-arrivals%2FT-shirt1.png?alt=media&token=5ddfe9ff-d779-4f46-9075-77219756135e"
       },
       "1": {
         "name": "Skinny Fit Jeans",
@@ -30,7 +30,7 @@
         "initialPrice": 260,
         "score":3.5,
         "description": "",
-        "imageUrl": "gs://shop-co-18eec.appspot.com/new-arrivals/Jeans1.png"
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/new-arrivals%2FJeans1.png?alt=media&token=9358f804-6398-40d4-ab46-ab3203b2e8cf"
       },
       "2": {
         "name": "Checkered Shirt",
@@ -39,7 +39,7 @@
         "initialPrice": -1,
         "score":4.5,
         "description": "",
-        "imageUrl": "gs://shop-co-18eec.appspot.com/new-arrivals/Shirt1.png"
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/new-arrivals%2FShirt1.png?alt=media&token=5f2a1f3d-9bdd-44c2-9218-adad8d434383"
       },
       "3": {
         "name": "Sleeve Striped T-shirt",
@@ -48,7 +48,70 @@
         "initialPrice": 160,
         "score":4.5,
         "description": "",
-        "imageUrl": "gs://shop-co-18eec.appspot.com/new-arrivals/T-shirt2.png"
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/new-arrivals%2FT-shirt2.png?alt=media&token=b3d40b34-28c4-4dba-98e2-a041e1ab06ca"
+      },
+      "4": {
+        "name": "Vertical Striped Shirt",
+        "category": "top_selling", 
+        "price": 212,
+        "initialPrice": 232,
+        "score":5,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/top-selling%2FShirt2.png?alt=media&token=e4ee4aa6-edd8-4e4c-9ab5-2a68d9d628a7"
+      },
+      "5": {
+        "name": "Courage Graphic T-shirt",
+        "category": "top_selling", 
+        "price": 145,
+        "initialPrice": -1,
+        "score":4,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/top-selling%2FT-shirt3.png?alt=media&token=0b41034b-9248-4a93-a8e6-d3aabcbcb737"
+      },
+      "6": {
+        "name": "Loose Fit Bermuda Shorts",
+        "category": "top_selling", 
+        "price": 80,
+        "initialPrice": -1,
+        "score":3,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/top-selling%2FShorts.png?alt=media&token=b63445ce-5a7c-4d9f-a312-fb40416d62e8"
+      },
+      "7": {
+        "name": "Faded Skinny Jeans",
+        "category": "top_selling", 
+        "price": 210,
+        "initialPrice": -1,
+        "score":4.5,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/top-selling%2FJeans2.png?alt=media&token=ddacf755-2f36-4fa2-b0dd-d79d9614c978"
+      }
+    },
+    "comments": {
+      "0": {
+        "username": "Sarah M.",
+        "score": 5,
+        "text": "\"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”"
+      },
+      "1": {
+        "username": "Alex K.",
+        "score": 4,
+        "text": "\"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”"
+      },
+      "2": {
+        "username": "James L.",
+        "score": 2,
+        "text": "\"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”"
+      },
+      "3": {
+        "username": "Mooen",
+        "score": 5,
+        "text": "\"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”"
+      },
+      "4": {
+        "username": "Sarah M.",
+        "score": 4,
+        "text": "\"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”"
       }
     }
   }

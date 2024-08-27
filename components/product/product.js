@@ -11,7 +11,7 @@ template.innerHTML = `
             <div class="score__stars"></div>
             <p class="score__text"></p>
         </div>
-        <div class="pirce">
+        <div class="price">
             <h4 class="price__final"></h4>
             <h4 class="price__initial"></h4>
             <p class="price__discount"></p>
@@ -68,9 +68,9 @@ class Product extends HTMLElement {
         let initialPrice = Number(this.getAttribute('product-initial-price'))
 
         if(initialPrice !== -1) {
-            let discountPrecentage = 100 - (Math.ceil((finalPrice/initialPrice) * 100))
+            let discountPercentage = 100 - (Math.ceil((finalPrice/initialPrice) * 100))
             productInitialPriceElem.innerHTML = '$' + initialPrice
-            productDiscountElem.innerHTML = '-' + discountPrecentage + '%'
+            productDiscountElem.innerHTML = '-' + discountPercentage + '%'
         } else {
             productInitialPriceElem.style.display = 'none'
             productDiscountElem.style.display = 'none'

@@ -1,0 +1,24 @@
+.comment__item{
+    border: 1px solid var(--primary-alpha-10);
+    padding: 2.8rem 3.2rem;
+    border-radius: 2rem;
+    margin: 0 0 0 2rem;
+    height: 100%;
+}
+.comment__item:last-child{
+    margin-right: 0;
+
+}
+.comment__title-wrapper{
+    display: flex;
+    align-items: first flex-end;
+    gap: 0.4rem;
+    margin: 1.5rem 0;
+}
+.comment__title{
+    font-family: var(--secondary_font);
+    font-size: 2rem;
+}
+.comment__text{
+    text-align: start;
+}

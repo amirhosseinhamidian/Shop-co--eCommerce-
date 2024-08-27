@@ -62,4 +62,17 @@ a{
 .sectoin__title{
     font-family: var(--secondary_font);
     font-size: 4.8rem;
+    text-transform: uppercase;
+}
+
+@media (max-width:768px){
+    .sectoin__title{
+        font-size: 3.8rem;
+    }
+}
+
+@media (max-width:576px) {
+    .sectoin__title{
+        font-size: 3.2rem;
+    }
 }
