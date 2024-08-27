@@ -32,7 +32,7 @@
 .score__text span{
     color: var(--primary-alpha-60);
 }
-.pirce{
+.price{
     display: flex;
     align-items: center;
     gap: 1rem;

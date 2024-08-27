@@ -22,3 +22,8 @@
 .comment__text{
     text-align: start;
 }
+.score{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

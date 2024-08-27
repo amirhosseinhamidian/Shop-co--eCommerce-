@@ -86,6 +86,7 @@ function generateCommentElement(comment){
     const commentElem = document.createElement('site-comment')
     commentElem.setAttribute("comment-title", comment.username)
     commentElem.setAttribute("comment-text", comment.text)
+    commentElem.setAttribute("comment-score", comment.score)
     commentElem.classList.add("comment__site-item")
     return commentElem
 }

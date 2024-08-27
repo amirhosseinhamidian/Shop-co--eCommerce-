@@ -34,6 +34,29 @@ class Comment extends HTMLElement {
 
         titleElem.innerHTML = titleComment
         textElem.innerHTML = textComment
+
+        let commentScore = Number(this.getAttribute('comment-score'))
+        console.log("score : ", commentScore);
+        
+
+        for(let i = 0; i < Math.floor(commentScore); i++) {
+            const starContainer = document.createElement('div');
+            starContainer.style.display = 'flex'
+            starContainer.style.alignItems = 'center'
+            starContainer.innerHTML = `<svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633"/>
+                                    </svg>`;
+            scoreElem.append(starContainer)
+        }
+        if(!Number.isInteger(commentScore)){
+            const halfStarContainer = document.createElement('div');
+            halfStarContainer.style.display = 'flex'
+            halfStarContainer.style.alignItems = 'center'
+            halfStarContainer.innerHTML = `<svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.56594 16.9794L8.99998 13.9561V0.255127L6.38077 5.89504L0.20752 6.64322L4.76201 10.8771L3.56594 16.9794Z" fill="#FFC633"/>
+                                            </svg>`
+            scoreElem.append(halfStarContainer)
+        }
     }
 
     static observedAttributes () {
