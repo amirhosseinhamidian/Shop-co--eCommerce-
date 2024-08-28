@@ -2,6 +2,7 @@
     --primary:#000;
     --primary-alpha-60:rgba(0, 0, 0, 0.6);
     --primary-alpha-40:#999999;
+    --primary-alpha-20:rgba(0, 0, 0, 0.2);
     --primary-alpha-10:rgba(0, 0, 0, 0.1);
     --color-white:#fff;
     --color-gray:#F0F0F0;
@@ -32,9 +33,26 @@ body{
     font-size: 1.6rem;
     overflow-x: hidden;
 }
+p{
+    color: var(--primary-alpha-60);
+}
 
 a{
     text-decoration: none;
+}
+hr{
+    margin-top: 4.5rem;
+    border: 0;
+    border-top: 1px solid var(--primary-alpha-10);
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 /* 

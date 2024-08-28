@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/styles/reset.css" />
+    <link rel="stylesheet" href="/assets/styles/fonts.css" />
+    <link rel="stylesheet" href="/assets/styles/base.css" />
+    <link rel="stylesheet" href="/assets/styles/grid.css" />
+    <link rel="stylesheet" href="/assets/styles/productDetail.css" />
+</head>
+<body>
+    <header>
+        <site-header></site-header>
+        <div class="container"><hr style="margin-top: 2.4rem;"></div>
+    </header>
+    <main>
+        <section class="path">
+            <div class="container">
+                <div class="path__wrapper">Home > Shop > Men > T-shirt</div>
+            </div>
+        </section>
+        <section class="product-info">
+            <div class="container">
+                <div class="product-info__wrapper">
+                    <div class="product-info__left">
+                        <div class="product-images">
+                            <img src="../assets/images/product/Jeans1.png" alt="" class="product-images__img">
+                            <img src="../assets/images/product/Shirt1.png" alt="" class="product-images__img">
+                            <img src="../assets/images/product/T-shirt1.png" alt="" class="product-images__img">
+                        </div>
+                        <img src="../assets/images/product/T-shirt2.png" alt="" class="product__main-img">
+                    </div>
+                    <div class="product-info__right">
+                        <h1 class="product__title">One Life Graphic T-shirt</h1>
+                        <div class="score"></div>
+                        <div class="price">
+                            <h4 class="price__final">$260</h4>
+                            <h4 class="price__initial">$300</h4>
+                            <p class="price__discount">-40%</p>
+                        </div>
+                        <p class="product__caption">This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.</p>
+                        <hr style="margin-block: 2.4rem;">
+                        <div class="colors-section">
+                            <p class="product-section__title">Select Colors</p>
+                            <div class="colors">
+                                <div class="color__item"></div>
+                                <div class="color__item"></div>
+                                <div class="color__item"></div>
+                            </div>
+                        </div>
+                        <hr style="margin-block: 2.4rem;">
+                        <div class="size-section">
+                            <p class="product-section__title">Choose Size</p>
+                            <div class="sizes">
+                                <a href="#" class="size__item">Small</a>
+                                <a href="#" class="size__item">Medium</a>
+                                <a href="#" class="size__item size__item--active">Large</a>
+                                <a href="#" class="size__item">X-Large</a>
+                            </div>
+                        </div>
+                        <hr style="margin-block: 2.4rem;">
+                        <div class="add-to-cart-section">
+                            <div class="count__buttons">
+                                <button class="count__decrease">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12Z" fill="black"/>
+                                    </svg>                                  
+                                </button>
+                                <input type="number" class="count__text" value="1">
+                                <button class="count__increase">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H13.125V20.25C13.125 20.5484 13.0065 20.8345 12.7955 21.0455C12.5845 21.2565 12.2984 21.375 12 21.375C11.7016 21.375 11.4155 21.2565 11.2045 21.0455C10.9935 20.8345 10.875 20.5484 10.875 20.25V13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H10.875V3.75C10.875 3.45163 10.9935 3.16548 11.2045 2.9545C11.4155 2.74353 11.7016 2.625 12 2.625C12.2984 2.625 12.5845 2.74353 12.7955 2.9545C13.0065 3.16548 13.125 3.45163 13.125 3.75V10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12Z" fill="black"/>
+                                    </svg>  
+                                </button>
+                            </div>
+                            <a href="#" class="add__link btn">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tabs">
+            <div class="container">
+                <div class="tabs__wrapper">
+                    <a href="#" class="tabs__item">Product Details</a>
+                    <a href="#" class="tabs__item">Rating & Reviews</a>
+                    <a href="#" class="tabs__item">FAQs</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script type="module" src="../assets/scripts/productDetail.js"></script>
+    <script type="module" src="../assets/scripts/home.js"></script>
+</body>
+</html>

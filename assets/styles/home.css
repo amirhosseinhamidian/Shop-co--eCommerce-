@@ -138,11 +138,6 @@
 .new-arrivals__link:hover{
     background-color: var(--primary-alpha-10);
 }
-.new-arrivals__divider{
-    margin-top: 4.5rem;
-    border: 0;
-    border-top: 1px solid var(--primary-alpha-10);
-}
 
 /* 
 
@@ -271,65 +266,7 @@
     display: none;            
 }
 
-/* 
 
-=========================
-    Newsletter Section
-=========================
-
-*/
-
-.newsletter__wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--primary);
-    border-radius: 2rem;
-    padding: 3.6rem 6.4rem;
-    line-height: 4.5rem;
-    gap: 2rem;
-}
-.newsletter__title{
-    font-family: var(--secondary_font);
-    font-size: 4rem;
-    color: var(--color-white);
-    flex-basis: 50%;
-    text-align: start;
-    line-height: 4.2rem;
-}
-.newsletter__functionality{
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 1.4rem;
-}
-.newsletter__email{
-    background-color: var(--color-white);
-    padding: 1.6rem 1.2rem;
-    border-radius: 6.2rem;
-    display: flex;
-    align-items: center;
-    width: 75%;
-}
-.email__input{
-    outline: none;
-    border: none;
-    margin-left: 1rem;
-    width: 100%;
-}
-.email__submit{
-    width: 75%;
-    background-color: var(--color-white);
-    padding: 1.6rem 1.2rem;
-    border-radius: 6.2rem;
-    font-family: var(--primary_font_medium);
-    cursor: pointer;
-    transition: all 150ms ease-in;
-}
-.email__submit:hover{
-    background-color: var(--primary-alpha-40);
-}
 
 @media (max-width:1400px) {
     .hero__title{
@@ -401,10 +338,6 @@
     .comments__wrapper{
         grid-auto-columns: minmax(50%, 1fr);
     }
-    .newsletter__title{
-        font-size: 3rem;
-        line-height: 3.2rem;
-    }
 }
 @media (max-width:768px) {
     .new-arrivals__link,
@@ -415,14 +348,6 @@
     }
     .comments__wrapper{
         grid-auto-columns: minmax(100%, 1fr);
-    }
-    .newsletter__wrapper{
-        flex-direction: column;
-    }
-    .newsletter__email,
-    .email__submit,
-    .newsletter__functionality{
-        width: 100%;
     }
 }
 @media (max-width:576px) {
@@ -457,9 +382,7 @@
     .browse-style__title{
         font-size: 2rem;
     }
-    .newsletter__wrapper{
-        padding: 1.8rem 3.2rem;
-    }
+
 }
 
 @media (max-width:403px){
@@ -497,9 +420,5 @@
     }
     .browse-style__img{
         transform: scale(1.2) translate(-3rem, 0rem);
-    }
-    .newsletter__title{
-        font-size: 2.4rem;
-        line-height: 2.8rem;
     }
 }

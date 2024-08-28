@@ -8,7 +8,6 @@
 
 .promotion{
     background-color: var(--primary);
-    color: var(--color-white);
 }
 .promotion__wrapper{
     display: flex;
@@ -20,11 +19,12 @@
 .promotion__text{
     flex: 1;
     font-size: 1.4rem;
+    color: var(--color-white);
 }
 .promotion__text a{
-    color: var(--color-white);
     text-decoration: underline;
     font-weight: 600;
+    color: var(--color-white);
 }
 
 .promotion__close{

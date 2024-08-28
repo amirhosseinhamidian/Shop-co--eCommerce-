@@ -1,10 +1,12 @@
 import { Header } from "../../components/header/header.js";
 import { Product } from "../../components/product/product.js";
 import { Comment } from "../../components/comment/comment.js";
+import { Footer } from "../../components/footer/footer.js";
 
 window.customElements.define('site-header', Header)
 window.customElements.define('site-product', Product)
 window.customElements.define('site-comment', Comment)
+window.customElements.define('site-footer', Footer)
 
 const newArrivalsHolder = document.querySelector(".new-arrivals__wrapper")
 const topSellingHolder = document.querySelector(".top-selling__wrapper")
