@@ -65,7 +65,7 @@ function generateProductElement(product) {
 }
 
 async function getComments() {
-    const url = `https://shop-co-18eec-default-rtdb.firebaseio.com/comments.json`
+    const url = `https://shop-co-18eec-default-rtdb.firebaseio.com/comments.json?orderBy="productId"&equalTo=-1`
     try{
         const response = await fetch(url);
         if (!response.ok) {
@@ -79,9 +79,12 @@ async function getComments() {
 
 async function displayComments() {
     let comments = await getComments()
-    comments.forEach(comment => {
-        commentContainerElem.append(generateCommentElement(comment))
-    });
+    for (const key in comments) {
+        if (Object.prototype.hasOwnProperty.call(comments, key)) {
+            const element = comments[key];
+            commentContainerElem.append(generateCommentElement(element))
+        }
+    }
 }
 
 function generateCommentElement(comment){

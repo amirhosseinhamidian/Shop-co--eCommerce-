@@ -16,7 +16,7 @@
     line-height: 4.5rem;
     gap: 2rem;
     position: absolute;
-    bottom: 45rem;
+    bottom: 34rem;
     left: 1.5rem;
     right: 1.5rem;
 }
@@ -172,6 +172,9 @@
     .footer__col{
         flex-direction: column;
     }
+    .newsletter__wrapper{
+        bottom: 45rem;
+    }
 }
 @media (max-width:768px){
     .newsletter__email,
@@ -191,12 +194,21 @@
 @media (max-width:576px){
     .newsletter__wrapper{
         padding: 1.8rem 3.2rem;
-        bottom: 65rem;
+        bottom: 61rem;
     }
 }
 @media (max-width:403px){
     .newsletter__title{
         font-size: 2.4rem;
         line-height: 2.8rem;
+    }
+    .newsletter__wrapper{
+        bottom: 64rem;
+    }
+}
+
+@media (max-width:318px) {
+    .newsletter__wrapper{
+        bottom: 80rem;
     }
 }

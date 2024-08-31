@@ -5,7 +5,12 @@ template.innerHTML = `
     <link rel="stylesheet" href="/assets/styles/grid.css">
     <link rel="stylesheet" href="../components/comment/comment.css">
     <div class="comment__item">
-      <div class="score"></div>
+      <div class="comment__head">
+          <div class="score"></div>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="comment__menu">
+              <path d="M14.625 12C14.625 12.5192 14.471 13.0267 14.1826 13.4584C13.8942 13.8901 13.4842 14.2265 13.0045 14.4252C12.5249 14.6239 11.9971 14.6758 11.4879 14.5746C10.9787 14.4733 10.511 14.2233 10.1438 13.8562C9.77673 13.489 9.52673 13.0213 9.42544 12.5121C9.32415 12.0029 9.37614 11.4751 9.57482 10.9955C9.7735 10.5158 10.11 10.1058 10.5416 9.81739C10.9733 9.52895 11.4808 9.375 12 9.375C12.6962 9.375 13.3639 9.65156 13.8562 10.1438C14.3484 10.6361 14.625 11.3038 14.625 12ZM4.5 9.375C3.98083 9.375 3.47331 9.52895 3.04163 9.81739C2.60995 10.1058 2.2735 10.5158 2.07482 10.9955C1.87614 11.4751 1.82415 12.0029 1.92544 12.5121C2.02673 13.0213 2.27673 13.489 2.64385 13.8562C3.01096 14.2233 3.47869 14.4733 3.98789 14.5746C4.49709 14.6758 5.02489 14.6239 5.50455 14.4252C5.9842 14.2265 6.39417 13.8901 6.68261 13.4584C6.97105 13.0267 7.125 12.5192 7.125 12C7.125 11.3038 6.84844 10.6361 6.35616 10.1438C5.86387 9.65156 5.19619 9.375 4.5 9.375ZM19.5 9.375C18.9808 9.375 18.4733 9.52895 18.0416 9.81739C17.61 10.1058 17.2735 10.5158 17.0748 10.9955C16.8761 11.4751 16.8242 12.0029 16.9254 12.5121C17.0267 13.0213 17.2767 13.489 17.6438 13.8562C18.011 14.2233 18.4787 14.4733 18.9879 14.5746C19.4971 14.6758 20.0249 14.6239 20.5045 14.4252C20.9842 14.2265 21.3942 13.8901 21.6826 13.4584C21.971 13.0267 22.125 12.5192 22.125 12C22.125 11.6553 22.0571 11.3139 21.9252 10.9955C21.7933 10.677 21.5999 10.3876 21.3562 10.1438C21.1124 9.90009 20.823 9.70673 20.5045 9.57482C20.1861 9.4429 19.8447 9.375 19.5 9.375Z" fill="black" fill-opacity="0.4"/>
+          </svg>    
+      </div>
       <div class="comment__title-wrapper">
         <h5 class="comment__title"></h5>
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -16,6 +21,7 @@ template.innerHTML = `
         </svg>
       </div>
       <p class="comment__text"></p>
+      <p class="comment__date"></p>
     </div>
 `
 class Comment extends HTMLElement {
@@ -28,12 +34,21 @@ class Comment extends HTMLElement {
         const scoreElem = this.shadowRoot.querySelector(".score")
         const titleElem = this.shadowRoot.querySelector(".comment__title")
         const textElem = this.shadowRoot.querySelector(".comment__text")
+        const dateElem = this.shadowRoot.querySelector(".comment__date")
+        const menuElem = this.shadowRoot.querySelector(".comment__menu")
 
         let titleComment = this.getAttribute('comment-title')
         let textComment = this.getAttribute('comment-text')
+        let dateComment = this.getAttribute('comment-date')
 
         titleElem.innerHTML = titleComment
         textElem.innerHTML = textComment
+        if (dateComment) {
+          dateElem.innerHTML = `Posted on ${dateComment}`
+        } else {
+          dateElem.style.display = 'none'
+          menuElem.style.display = 'none'
+        }
 
         let commentScore = Number(this.getAttribute('comment-score'))
         console.log("score : ", commentScore);
@@ -60,7 +75,7 @@ class Comment extends HTMLElement {
     }
 
     static observedAttributes () {
-        return ['comment-title', 'comment-text']
+        return ['comment-title', 'comment-text', 'comment-score', 'comment-date']
     }
 }
 

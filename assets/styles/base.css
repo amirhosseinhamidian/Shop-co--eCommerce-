@@ -73,6 +73,14 @@ input::-webkit-inner-spin-button {
     -ms-border-radius: 10rem;
     -o-border-radius: 10rem;
 }
+.btn-secondary{
+    background-color: var(--color-gray);
+    color: var(--primary);
+    border: none;
+    outline: none;
+    border-radius: 6.2rem;
+    padding: 1.6rem 2rem;
+}
 .section-head{
     text-align: center;
     margin-top: 6rem;
@@ -92,5 +100,14 @@ input::-webkit-inner-spin-button {
 @media (max-width:576px) {
     .sectoin__title{
         font-size: 3.2rem;
+    }
+    body{
+        font-size: 1.4rem;
+    }
+    .btn{
+        padding: 1.2rem 1.6rem;
+    }
+    .btn-secondary{
+        padding: 1.2rem 1.6rem;
     }
 }

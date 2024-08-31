@@ -85,33 +85,145 @@
         "score":4.5,
         "description": "",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/top-selling%2FJeans2.png?alt=media&token=ddacf755-2f36-4fa2-b0dd-d79d9614c978"
+      },
+      "8": {
+        "name": "Polo with Contrast Trims",
+        "category": "you_like", 
+        "price": 145,
+        "initialPrice": -1,
+        "score":3.5,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/you-like%2Fimage%207.png?alt=media&token=61e3d421-0c36-4a42-aff0-4d527a1be8f4"
+      },
+      "9": {
+        "name": "Gradient Graphic T-shirt",
+        "category": "you_like", 
+        "price": 210,
+        "initialPrice": -1,
+        "score":4.5,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/you-like%2Fimage%208.png?alt=media&token=31ebafe4-5aef-4d84-bbeb-bf6c3749e1ae"
+      },
+      "10": {
+        "name": "Polo with Tipping Details",
+        "category": "you_like", 
+        "price": 180,
+        "initialPrice": -1,
+        "score":4.5,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/you-like%2Fimage%209.png?alt=media&token=18264789-5d59-4a8a-995c-da5587c18cfc"
+      },
+      "11": {
+        "name": "Black Striped T-shirt",
+        "category": "you_like", 
+        "price": 120,
+        "initialPrice": 150,
+        "score":5,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/you-like%2Fimage%2010.png?alt=media&token=d0e351e8-fbb0-47c9-9346-a03f323b4444"
       }
     },
     "comments": {
       "0": {
         "username": "Sarah M.",
         "score": 5,
-        "text": "\"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”"
+        "text": "\"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”",
+        "productId": -1,
+        "date": ""
       },
       "1": {
         "username": "Alex K.",
         "score": 4,
-        "text": "\"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”"
+        "text": "\"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”",
+        "productId": -1,
+        "date": ""
       },
       "2": {
         "username": "James L.",
         "score": 2,
-        "text": "\"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”"
+        "text": "\"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”",
+        "productId": -1,
+        "date": ""
       },
       "3": {
         "username": "Mooen",
         "score": 5,
-        "text": "\"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”"
+        "text": "\"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”",
+        "productId": -1,
+        "date": ""
       },
       "4": {
         "username": "Sarah M.",
         "score": 4,
-        "text": "\"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”"
+        "text": "\"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”",
+        "productId": -1,
+        "date": ""
+      },
+      "5": {
+        "username": "Samantha D.",
+        "score": 4.5,
+        "text": "\"I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt.\"",
+        "productId": 1,
+        "date": "August 14, 2023"
+      },
+      "6": {
+        "username": "Alex M.",
+        "score": 4,
+        "text": "\"The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.\"",
+        "productId": 1,
+        "date": "August 15, 2023"
+      },
+      "7": {
+        "username": "Ethan R.",
+        "score": 3.5,
+        "text": "\"This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt.\"",
+        "productId": 1,
+        "date": "August 16, 2023"
+      },
+      "8": {
+        "username": "Olivia P.",
+        "score": 4,
+        "text": "\"As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out.\"",
+        "productId": 1,
+        "date": "August 17, 2023"
+      },
+      "9": {
+        "username": "Liam K.",
+        "score": 4,
+        "text": "\"This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion.\"",
+        "productId": 1,
+        "date": "August 18, 2023"
+      },
+      "10": {
+        "username": "Ava H.",
+        "score": 4.5,
+        "text": "\"I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.\"",
+        "productId": 1,
+        "date": "August 19, 2023"
+      }
+    },
+    "productDetail": {
+      "id": 1,
+      "title": "One Life Graphic T-shirt",
+      "description": "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
+      "price": 260,
+      "initialPrice": 300,
+      "score": 4.5,
+      "colors": {
+        "0": "#4F4631",
+        "1": "#314F4A",
+        "2": "#31344F"
+      },
+      "sizes": {
+        "0": "Small",
+        "1": "Medium",
+        "2": "Large",
+        "3": "X-Large"
+      },
+      "images": {
+        "0": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/product-detail%2Fimg1.png?alt=media&token=0222354f-1907-487d-a2f0-368e75306697",
+        "1": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/product-detail%2Fimg2.png?alt=media&token=14af4388-5751-4b5e-b148-728dbf825e0c",
+        "2": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/product-detail%2Fimg3.png?alt=media&token=8a139f70-c807-4e90-8218-b46167f7ca7a"
       }
     }
   }

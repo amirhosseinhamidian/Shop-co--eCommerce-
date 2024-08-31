@@ -16,7 +16,7 @@
     margin: 1.5rem 0;
 }
 .comment__title{
-    font-family: var(--secondary_font);
+    font-family: var(--primary_font_bold);
     font-size: 2rem;
 }
 .comment__text{
@@ -26,4 +26,22 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+.comment__head{
+    display: flex;
+    justify-content: space-between;
+}
+.comment__date{
+    font-family: var(--primary_font_medium);
+    margin-top: 2.4rem;
+}
+
+@media (max-width:576px){
+    .comment__title{
+        font-size: 1.6rem;
+    }
+    .comment__date,
+    .comment__text{
+        font-size: 1.4rem;
+    }
 }
