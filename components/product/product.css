@@ -1,6 +1,6 @@
 .product{
     text-align: start;
-    width: 100%;
+    width: min-content;
 }
 .product__img{
     width: 100%;

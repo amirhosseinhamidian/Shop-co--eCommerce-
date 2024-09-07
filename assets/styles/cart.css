@@ -1,0 +1,132 @@
+.main__wrapper{
+    display: flex;
+    gap: 2rem;
+}
+
+/* 
+
+=========================
+    Cart Items Section
+=========================
+
+*/
+
+.cart-items{
+    flex-basis: 60%;
+    border: 1px solid var(--primary-alpha-10);
+    border-radius: 2rem;
+    padding: 2rem 2.4rem;
+}
+
+/* 
+
+============================
+    Order Summery Section
+============================
+
+*/
+
+.order-summery{
+    flex-basis: 40%;
+    border: 1px solid var(--primary-alpha-10);
+    border-radius: 2rem;
+    padding: 2rem 2.4rem;
+    align-self: flex-start;
+}
+.order-summery__title{
+    font-family: var(--primary_font_bold);
+    font-size: 2.4rem;
+}
+.order-summery__items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.order-summery__title-item{
+    font-size: 2rem;
+}
+.order-summery__cost-item{
+    font-size: 2rem;
+    font-family: var(--primary_font_bold);
+}
+.discount{
+    color: var(--color-red);
+}
+.order-summery__total{
+    display: flex;
+    justify-content: space-between;
+}
+.order-summery__total-title{
+    font-size: 2rem;
+    color: var(--primary);
+}
+.order-summery__cost{
+    font-size: 2.4rem;
+    font-family: var(--primary_font_bold);
+}
+.order-summery__promo-code{
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+.promo-code__input-wrapper{
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    gap: 0.8rem;
+}
+.promo-code__input{
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+}
+.promo-code__input::placeholder{
+    color: var(--primary-alpha-40);
+}
+.checkout__wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+.checkout__text{
+    color: var(--color-white);
+    font-family: var(--primary_font_medium);
+}
+
+@media (max-width:992px){
+    .main__wrapper{
+        flex-direction: column;
+    }
+    .cart-items,
+    .order-summery{
+        width: 100%;
+    }
+}
+@media (max-width:430px){
+    
+    .cart-item__price-count{
+        flex-wrap: wrap;
+    }
+    .cart-item__img{
+        width: 9rem;
+        height: 9rem;
+    }
+    .cart-item__title{
+        font-size: 1.6rem;
+    }
+    .cart-item__price{
+        font-size: 2rem;
+    }
+    .count__text{
+        width: 1.4rem;
+    }
+    .count__icon,
+    .cart-item__delete{
+        width: 1.6rem;
+        height: 1.6rem;
+        flex-shrink: 0;
+    }
+
+}
