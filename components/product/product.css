@@ -1,8 +1,9 @@
 .product{
     text-align: start;
+    width: 100%;
 }
 .product__img{
-    max-width: 29.5rem;
+    width: 100%;
     border-radius: 2rem;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
@@ -15,6 +16,7 @@
     white-space: nowrap;
     overflow: hidden;  
     text-overflow: ellipsis; 
+    width: 100%;
 }
 .score{
     display: flex;
@@ -61,10 +63,6 @@
 }
 
 @media (max-width:1400px){
-    .product__img {
-        max-width: 24.5rem;
-        max-height: 24.5rem;
-    }
     .product__title{
         font-size: 1.8rem;
     }
@@ -75,10 +73,7 @@
     
 }
 @media (max-width:1200px){
-    .product__img {
-        max-width: 21.5rem;
-        max-height: 22rem;
-    }
+
     .product__title{
         font-size: 1.6rem;
     }

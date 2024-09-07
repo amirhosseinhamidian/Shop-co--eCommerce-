@@ -4,6 +4,7 @@
     --primary-alpha-40:#999999;
     --primary-alpha-20:rgba(0, 0, 0, 0.2);
     --primary-alpha-10:rgba(0, 0, 0, 0.1);
+    --primary-alpha-5:rgba(0, 0, 0, 0.05);
     --color-white:#fff;
     --color-gray:#F0F0F0;
     --color-hero-bg:#F2F0F1;
@@ -41,7 +42,7 @@ a{
     text-decoration: none;
 }
 hr{
-    margin-top: 4.5rem;
+    margin-block: 2.4rem;
     border: 0;
     border-top: 1px solid var(--primary-alpha-10);
 }

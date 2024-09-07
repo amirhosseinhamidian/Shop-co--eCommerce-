@@ -11,6 +11,10 @@
       "you_like": {
         "name": "You Like",
         "description": "Products recommended based on your preferences"
+      },
+      "casual": {
+        "name": "Casual",
+        "description": "Products for casual style"
       }
     },
     "products": {
@@ -121,6 +125,87 @@
         "score":5,
         "description": "",
         "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/you-like%2Fimage%2010.png?alt=media&token=d0e351e8-fbb0-47c9-9346-a03f323b4444"
+      },
+      "12": {
+        "name": "Gradient Graphic T-shirt",
+        "category": "casual", 
+        "price": 145,
+        "initialPrice": -1,
+        "score":3.5,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/casual%2Fimage%208%20(1).png?alt=media&token=3f910dc0-df46-4091-8c3f-9babac08abf6"
+      },
+      "13": {
+        "name": "Polo with Tipping Details",
+        "category": "casual", 
+        "price": 180,
+        "initialPrice": -1,
+        "score":4.5,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/casual%2Fimage%209%20(1).png?alt=media&token=2c1000b5-f762-454f-a90c-6d24d995bf40"
+      },
+      "14": {
+        "name": "Black Striped T-shirt",
+        "category": "casual", 
+        "price": 120,
+        "initialPrice": 150,
+        "score":5,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/casual%2Fimage%2010%20(1).png?alt=media&token=78e166a8-a233-4ed0-957f-233f17f6622d"
+      },
+      "15": {
+        "name": "Skinny Fit Jeans",
+        "category": "casual", 
+        "price": 240,
+        "initialPrice": 260,
+        "score":3.5,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/casual%2Fimage%208%20(2).png?alt=media&token=7bb6b5b3-5e3e-411f-bcf6-054521fc3321"
+      },
+      "16": {
+        "name": "Checkered Shirt",
+        "category": "casual", 
+        "price": 180,
+        "initialPrice": -1,
+        "score":4.5,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/casual%2Fimage%209%20(2).png?alt=media&token=5120a354-bc72-4abd-94d9-d984d9162b85"
+      },
+      "17": {
+        "name": "Sleeve Striped T-shirt",
+        "category": "casual", 
+        "price": 130,
+        "initialPrice": 160,
+        "score":4.5,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/casual%2Fimage%2010%20(2).png?alt=media&token=b9388202-7874-4288-a3f0-39bd31a4b223"
+      },
+      "18": {
+        "name": "Vertical Striped Shirt",
+        "category": "casual", 
+        "price": 212,
+        "initialPrice": 232,
+        "score":5,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/casual%2Fimage%207%20(1).png?alt=media&token=060d0bea-bbfb-4454-a250-b8e7c1cfb507"
+      },
+      "19": {
+        "name": "Courage Graphic T-shirt",
+        "category": "casual", 
+        "price": 145,
+        "initialPrice": -1,
+        "score":4,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/casual%2Fimage%208%20(3).png?alt=media&token=7c815cb5-485b-484a-baa6-d4e78502366d"
+      },
+      "20": {
+        "name": "Loose Fit Bermuda Shorts",
+        "category": "casual", 
+        "price": 80,
+        "initialPrice": -1,
+        "score":3,
+        "description": "",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/shop-co-18eec.appspot.com/o/casual%2Fimage%209%20(3).png?alt=media&token=6efa3b25-21b9-4179-9d86-3df045a58d88"
       }
     },
     "comments": {
