@@ -349,14 +349,6 @@
     .comments__wrapper{
         grid-auto-columns: minmax(100%, 1fr);
     }
-    .new-arrivals__wrapper,
-    .top-selling__wrapper{
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        scrollbar-width: none;
-        -ms-overflow-style: none; 
-    }
 }
 @media (max-width:576px) {
     .info__count{
@@ -383,7 +375,14 @@
     .browse-style__title{
         font-size: 2rem;
     }
-
+    .new-arrivals__wrapper,
+    .top-selling__wrapper{
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none; 
+    }
 }
 
 @media (max-width:403px){

@@ -6,15 +6,17 @@ template.innerHTML = `
     <link rel="stylesheet" href="../components/product/product.css">
     <div class="product">
         <img class="product__img">
-        <h4 class="product__title"></h4>
-        <div class="score">
-            <div class="score__stars"></div>
-            <p class="score__text"></p>
-        </div>
-        <div class="price">
-            <h4 class="price__final"></h4>
-            <h4 class="price__initial"></h4>
-            <p class="price__discount"></p>
+        <div class="product__info">
+            <h4 class="product__title"></h4>
+            <div class="score">
+                <div class="score__stars"></div>
+                <p class="score__text"></p>
+            </div>
+            <div class="price">
+                <h4 class="price__final"></h4>
+                <h4 class="price__initial"></h4>
+                <p class="price__discount"></p>
+            </div>
         </div>
     </div>
 `
@@ -27,6 +29,7 @@ class Product extends HTMLElement {
         this.shadowRoot.appendChild(template.content.cloneNode(true))
     }
     connectedCallback() {
+        let productElem = this.shadowRoot.querySelector(".product");
         let productImgElem = this.shadowRoot.querySelector(".product__img");
         let productTitleElem = this.shadowRoot.querySelector(".product__title");
         let scoreStarsElem = this.shadowRoot.querySelector(".score__stars");
@@ -51,7 +54,7 @@ class Product extends HTMLElement {
             starContainer.style.alignItems = 'center'
             starContainer.innerHTML = `<svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.4868 0L14.6852 6.8872L22.2237 7.80085L16.662 12.971L18.1226 20.4229L11.4868 16.731L4.85096 20.4229L6.31155 12.971L0.749813 7.80085L8.2883 6.8872L11.4868 0Z" fill="#FFC633"/>
-                                    </svg>`;
+                                       </svg>`;
             scoreStarsElem.append(starContainer)
         }
         if(!Number.isInteger(productScore)){
@@ -75,13 +78,16 @@ class Product extends HTMLElement {
             productInitialPriceElem.style.display = 'none'
             productDiscountElem.style.display = 'none'
         }
-        
 
         productFinalPriceElm.innerHTML = '$' + finalPrice
         
+        let productId = this.getAttribute('product-id')
+        productElem.addEventListener("click",() => {
+            window.location.href = `/pages/productDetail.html?productId=${productId}`
+        })
     }
     static observedAttributes () {
-        return ['product-title', 'product-img', 'product-score', 'product-final-price', 'product-initial-price']
+        return ['product-id','product-title', 'product-img', 'product-score', 'product-final-price', 'product-initial-price']
     }
 
 }

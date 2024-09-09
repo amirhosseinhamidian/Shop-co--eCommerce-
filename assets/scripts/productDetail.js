@@ -1,3 +1,8 @@
+// Get the query string from the URL
+const queryString = window.location.search;
+// Parse the query string to get the productId
+const urlParams = new URLSearchParams(queryString);
+const productId = urlParams.get('productId');
 
 
 const tabItems = document.querySelectorAll(".tabs__item")
@@ -25,6 +30,19 @@ let productSelectProperties = {}
 
 async function getProductDetails() {
     const url = "https://shop-co-18eec-default-rtdb.firebaseio.com/productDetail.json"
+    try {
+        const response = await fetch(url);
+        if(!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return await response.json()
+    } catch(err) {
+        console.error('Error fetching data:', err);
+    }
+}
+
+async function getProduct() {
+    const url = `https://shop-co-18eec-default-rtdb.firebaseio.com/products/${productId}.json`
     try {
         const response = await fetch(url);
         if(!response.ok) {
@@ -66,6 +84,7 @@ async function getProducts(orderBy) {
 async function displayDetailProduct() {
     //image section
     const productDetail = await getProductDetails();
+    const product = await getProduct();
     
     productDetail.images.forEach((image, index) => {
         const imageWrapperElem = document.createElement('div')
@@ -90,12 +109,12 @@ async function displayDetailProduct() {
     })
 
     //title section
-    productTitle.innerHTML = productDetail.title
+    productTitle.innerHTML = product.name
     
     //score section
 
-    scoreTextElem.innerHTML = productDetail.score + '/<span>5</span>'
-    for(let i = 0; i < Math.floor(productDetail.score); i++) {
+    scoreTextElem.innerHTML = product.score + '/<span>5</span>'
+    for(let i = 0; i < Math.floor(product.score); i++) {
         const starContainer = document.createElement('div');
         starContainer.style.display = 'flex'
         starContainer.style.alignItems = 'center'
@@ -104,7 +123,7 @@ async function displayDetailProduct() {
                                 </svg>`;
         scoreElem.append(starContainer);
     }
-    if(!Number.isInteger(productDetail.score)){
+    if(!Number.isInteger(product.score)){
         const halfStarContainer = document.createElement('div');
         halfStarContainer.style.display = 'flex'
         halfStarContainer.style.alignItems = 'center'
@@ -115,10 +134,10 @@ async function displayDetailProduct() {
     }
 
     // price section
-    priceFinalElem.innerHTML = `$${productDetail.price}`
-    if(productDetail.initialPrice !== -1) {
-        let discountPercentage = 100 - (Math.ceil((productDetail.price/productDetail.initialPrice) * 100))
-        priceInitialElem.innerHTML = `$${productDetail.initialPrice}`
+    priceFinalElem.innerHTML = `$${product.price}`
+    if(product.initialPrice !== -1) {
+        let discountPercentage = 100 - (Math.ceil((product.price/product.initialPrice) * 100))
+        priceInitialElem.innerHTML = `$${product.initialPrice}`
         priceDiscountElem.innerHTML = '-' + discountPercentage + '%'
     } else {
         priceInitialElem.style.display = 'none'
@@ -253,6 +272,7 @@ decreaseBtn.addEventListener('click', () => {
 
 addToCartElem.addEventListener("click", () => {
     productSelectProperties.count = countInput.value
+    productSelectProperties.id = productId
     console.log(productSelectProperties)
 })
 

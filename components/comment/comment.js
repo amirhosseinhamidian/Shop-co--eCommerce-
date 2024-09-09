@@ -50,9 +50,7 @@ class Comment extends HTMLElement {
           menuElem.style.display = 'none'
         }
 
-        let commentScore = Number(this.getAttribute('comment-score'))
-        console.log("score : ", commentScore);
-        
+        let commentScore = Number(this.getAttribute('comment-score'))        
 
         for(let i = 0; i < Math.floor(commentScore); i++) {
             const starContainer = document.createElement('div');

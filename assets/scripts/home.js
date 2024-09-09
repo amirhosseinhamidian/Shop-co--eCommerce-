@@ -37,7 +37,7 @@ async function displayNewArrivalsProducts() {
     try {
         const products = await getProducts('new_arrivals'); 
         for (const id in products) {
-            newArrivalsHolder.append(generateProductElement(products[id]));
+            newArrivalsHolder.append(generateProductElement(id,products[id]));
         }
         
     } catch (error) {
@@ -48,9 +48,8 @@ async function displayNewArrivalsProducts() {
 async function displayTopSellingProducts() {
     try {
         const products = await getProducts('top_selling'); 
-        console.log(products)
         for (const id in products) {
-            topSellingHolder.append(generateProductElement(products[id]));
+            topSellingHolder.append(generateProductElement(id,products[id]));
         }
         
     } catch (error) {
@@ -58,8 +57,9 @@ async function displayTopSellingProducts() {
     }
 }
 
-function generateProductElement(product) {
+function generateProductElement(id,product) {
     const productElem = document.createElement('site-product')
+    productElem.setAttribute('product-id',id)
     productElem.setAttribute('product-title',product.name)
     productElem.setAttribute('product-img',product.imageUrl)
     productElem.setAttribute('product-score',product.score)
